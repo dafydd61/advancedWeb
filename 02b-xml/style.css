@@ -1,0 +1,10 @@
+body {
+	font-family: sans-serif;
+	background-color: green;
+}
+
+#main {
+	background-color: white;
+	padding: 1em;
+	margin: 1em;
+}
