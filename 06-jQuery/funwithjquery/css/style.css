@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600);
 
 /* Eric Meyer reset, tweaked */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -39,8 +40,8 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1.6;
-  font-family: sans-serif;
+  line-height: 1.8;
+  font-family: 'Open Sans', sans-serif;
   color: hsla(0, 100%, 100%, .9);
   background: hsl(232, 18%, 32%);
 }
@@ -57,7 +58,7 @@ q:before, q:after {
 }
 
 input, textarea {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
 }
 
@@ -90,10 +91,12 @@ table {
 h1, h2, h3, h4 {
   font-weight: 300;
   font-family: 'Oswald', sans-serif;
+  letter-spacing: .07em;
   color: hsl(0, 100%, 100%);
 }
 
 h1 {
+  letter-spacing: 0;
   font-size: 2em;
   font-weight: 700;
   margin: .5em 0;
@@ -104,8 +107,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
-  padding: 0 0 .833333333em;
+  font-size: 1.25em;
+  padding: 0 0 .4em;
 }
 
 p {
@@ -168,7 +171,7 @@ label {
 }
 
 article {
-  padding: .5em .5em .1em;
+  padding: .5em 1em .1em;
   margin-bottom: 1em;
   background: hsla(0, 100%, 100%, .2);
 }
