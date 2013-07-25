@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
 /* Eric Meyer reset, tweaked */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0b1 | 201101 
@@ -39,7 +41,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.6;
   font-family: sans-serif;
-  color: #333;
+  color: hsla(0, 100%, 100%, .9);
+  background: hsl(232, 18%, 32%);
 }
 ol, ul {
   list-style: none;
@@ -85,17 +88,24 @@ table {
 }
 
 h1, h2, h3, h4 {
-  font-weight: bold;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  color: hsl(0, 100%, 100%);
 }
 
 h1 {
   font-size: 2em;
+  font-weight: 700;
   margin: .5em 0;
+  text-transform: uppercase;
+  background: hsla(0, 100%, 100%, .6);
+  color: hsl(232, 18%, 32%);
+  padding: .25em;
 }
 
 h2 {
   font-size: 1.2em;
-  margin-bottom: .833333333em;
+  padding: 0 0 .833333333em;
 }
 
 p {
@@ -103,15 +113,14 @@ p {
 }
 
 a {
-  color: #666;
+  color: hsla(0, 100%, 100%, .7);
 }
 
 a:hover, a:visited {
-  color: #444;
+  color: hsla(0, 100%, 100%, .5);
 }
 
 h2 a {
-  font-size: .833333333em;
 }
 
 ul {
@@ -126,34 +135,42 @@ input[type="text"],
 input[type="number"] {
   padding: .5em;
   border: none;
-  background: #ddd;
+  background: hsla(0, 100%, 100%, .7);
 }
 
 input[type="color"] {
   border: none;
-  background: #ddd;
+  background: hsla(0, 100%, 100%, .7);
 }
 
 input[type="submit"] {
   padding: .5em;
   border: none;
-  background: #ddd;
+  background: hsla(0, 100%, 100%, .7);
   cursor: pointer;
   font-size: .875em;
-  font-weight: bold;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
   color: #555;
 }
 
 input[type="submit"]:hover {
-  background: #999;
+  background: hsla(0, 100%, 100%, .2);
   color: white;
 }
 
 label {
   font-size: .875em;
-  color: #555;
-  font-weight: bold;
+  color: hsla(0, 100%, 100%, .9);
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
   display: block;
+}
+
+article {
+  padding: .5em .5em .1em;
+  margin-bottom: 1em;
+  background: hsla(0, 100%, 100%, .2);
 }
 
 .reveal-content {
@@ -169,7 +186,7 @@ label {
   left: -20em;
   top: 0;
   padding: 2em;
-  background: #666;
+  background: hsl(232, 18%, 20%);
   color: #eee;
   text-shadow: 0 1px 0 #444;
   -moz-transition: all 1s ease;
