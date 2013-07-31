@@ -22,4 +22,6 @@ The database, called rock_collector, needs to contain a table called "rock". it 
 - color (varchar): What colour is the rock?
 - given (tinyint): Have I given it away yet? This value is either 0 or 1, emulating boolean true and false.
 
+NOTE: You'll need to change the database name and login credentials to make this work on your own server!
+
 If you want to pursue this further, you can get a lot of good info [here](http://www.tizag.com/mysqlTutorial/index.php).
