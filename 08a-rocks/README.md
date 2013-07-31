@@ -13,4 +13,4 @@ There are some things it doesn't do, also, like:
 1. Displaying records in a specific order (ORDER BY)
 2. Filtering records (WHERE)
 
-You can get a lot of good info [here](http://www.tizag.com/mysqlTutorial/index.php).
+If you want to pursue this further, you can get a lot of good info [here](http://www.tizag.com/mysqlTutorial/index.php).
