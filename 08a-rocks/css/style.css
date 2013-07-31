@@ -1,0 +1,103 @@
+@import url('normalize.css');
+
+/* =Basics */
+
+body {
+  line-height: 1.7;
+  color: #333;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  line-height: 1;
+}
+
+a {
+  color: #666;
+}
+
+a:hover {
+  color: #888;
+}
+
+/* =Lists */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: .5em 0;
+}
+
+/* =Forms */
+
+input[type="text"] {
+  -webkit-appearance: none;
+  border: 1px solid #ddd;
+  padding: .5em;
+  width: 100%;
+}
+
+input[type="submit"],
+.button {
+  -webkit-appearance: none;
+  border: 1px solid #aaa;
+  width: 100%;
+  background: #ccc;
+  margin-top: .5em;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+input[type="submit"]:hover,
+.button:hover {
+  color: #eee;
+  background: #999;
+  border-color: #777;
+}
+
+
+label {
+  display: block;
+  margin-bottom: .1em;
+}
+
+/* =Tables */
+
+table {
+  width: 100%;
+  margin-top: 1em;
+  font-size: .875em;
+}
+th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+td {
+  padding: .5em 0;
+  line-height: 1;
+}
+
+/* =Layout */
+
+.wrap {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+#add-rock-form {
+  display: none;
+}
