@@ -1,7 +1,5 @@
 <?php
-mysql_connect("localhost", "root", "root") or die(mysql_error());
-mysql_select_db("rock_collector") or die(mysql_error());
-
+require('_signon.php');
 $rocks = mysql_query("SELECT * FROM rock") or die(mysql_error());
 ?>
 
