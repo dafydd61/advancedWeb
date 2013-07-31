@@ -43,10 +43,11 @@ $rocks = mysql_query("SELECT * FROM rock") or die(mysql_error());
           <td><?php echo($given); ?></td>
           <?php if ( $given == "No" ) { ?>
             <td><a href="give.php?id=<?php echo($rock['id'])?>">[Give it away]</a></td>
+            <td><a href="delete.php?id=<?php echo($rock['id'])?>">Put it back</a></td>
           <?php } else { ?>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
           <?php } ?>
-          <td><a href="delete.php?id=<?php echo($rock['id'])?>">Put it back</a></td>
         </tr>
       <?php } ?>
     </table>
