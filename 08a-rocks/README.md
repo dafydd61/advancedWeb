@@ -14,7 +14,7 @@ There also are some things it doesn't do, like:
 2. Filtering records (WHERE)
 3. Actually creating the table and columns. This would normally be done as part of a setup procedure, but instead, let's use phpMyAdmin.
 
-The database, called rock_collector, needs to contain a table called "rock". it needs the following columns:
+The database needs to contain a table called "rock". it needs the following columns:
 - id (INT, PRIMARY KEY, AUTO_INCREMENT): A unique id for each entry. The db assigns this number automatically when it creates a record.
 - whereFound (varchar): The name of the park where the rock was found.
 - who (varchar): Who I plan to give the rock to.
@@ -27,7 +27,7 @@ NOTE: You'll need to change the database name and login credentials to make this
 Your db credentials are ccitXXXX_drupalu/generic (unless you've changed your cPanel password)
 Your database name is ccitXXXX_drupaldb
 
-So my login on phoenix looks like this:
+So the code inside my _signon.php for phoenix looks like this:
 
     mysql_connect("localhost", "ccit1280_drupalu", "generic") or die(mysql_error());
     mysql_select_db("ccit1280_drupaldb") or die(mysql_error());
