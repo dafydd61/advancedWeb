@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: sans-serif;
+}
+
+.wireframe section,
+.wireframe nav {
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+.wireframe section > h1,
+.wireframe nav > h1 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.wireframe .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ddd;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+.wireframe #page-title {
+  height: 3em;
+}
+.wireframe #description {
+  height: 5em;
+}
+.wireframe #ingredients {
+  height: 20em;
+}
+.wireframe #instructions {
+  height: 20em;
+}
+.wireframe #author-info {
+  height: 3em;
+}
+
+.wireframe #nav {
+  height: 8em;
+}

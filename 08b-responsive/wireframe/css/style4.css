@@ -1,0 +1,15 @@
+.wireframe #page-title {
+  height: 3em;
+}
+.wireframe #description {
+  height: 5em;
+}
+.wireframe #ingredients {
+  height: 20em;
+}
+.wireframe #instructions {
+  height: 20em;
+}
+.wireframe #author-info {
+  height: 3em;
+}
