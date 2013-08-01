@@ -19,37 +19,45 @@ $rocks = mysql_query("SELECT * FROM rock") or die(mysql_error());
       <p>I picks ’em up, I gives ’em away.</p>
     </header>
     <table class="rocks-list">
-      <tr>
-        <th>Where</th>
-        <th>Diameter</th>
-        <th>Color</th>
-        <th>Who is it for?</th>
-        <th colspan="2">Given away?</th>
-        <th>&nbsp;</th>
-      </tr>
-      <?php while ($rock = mysql_fetch_array($rocks)) { ?>
+      <thead>
         <tr>
-          <td class="where"><?php echo($rock['whereFound']); ?></td>
-          <td class="diameter"><?php echo($rock['diameter']); ?> cm</td>
-          <td class="color"><?php echo($rock['color']); ?></td>
-          <?php
-          if ( ($rock['given']) == '1' ) {
-            $given = "Yes";
-          } else {
-            $given = "No";
-          }
-          ?>
-          <td class="who"><?php echo($rock['who']); ?></td>
-          <td class="given"><?php echo($given); ?></td>
-          <?php if ( $given == "No" ) { ?>
-            <td class="give"><a href="give.php?id=<?php echo($rock['id'])?>">[Give it away]</a></td>
-            <td class="put-back"><a href="delete.php?id=<?php echo($rock['id'])?>">Put it back</a></td>
-          <?php } else { ?>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          <?php } ?>
+          <th>Where</th>
+          <th>Diameter</th>
+          <th>Color</th>
+          <th>Who is it for?</th>
+          <th colspan="2">Given away?</th>
+          <th>&nbsp;</th>
         </tr>
-      <?php } ?>
+      </thead>
+      <tbody>
+        <?php while ($rock = mysql_fetch_array($rocks)) { ?>
+          <tr>
+            <td class="where"><?php echo($rock['whereFound']); ?></td>
+            <td class="diameter"><?php echo($rock['diameter']); ?> cm</td>
+            <td class="color"><?php echo($rock['color']); ?></td>
+            <?php
+            if ( ($rock['given']) == '1' ) {
+              $given = "Yes";
+            } else {
+              $given = "No";
+            }
+            ?>
+            <?php if ( $given == "No" ) { ?>
+              <td class="who"><?php echo($rock['who']); ?></td>
+            <?php } else { ?>
+              <td class="who done"><?php echo($rock['who']); ?></td>
+            <?php } ?>
+            <td class="given"><?php echo($given); ?></td>
+            <?php if ( $given == "No" ) { ?>
+              <td class="give"><a href="give.php?id=<?php echo($rock['id'])?>">Give it away</a></td>
+              <td class="put-back"><a href="delete.php?id=<?php echo($rock['id'])?>">Put it back</a></td>
+            <?php } else { ?>
+              <td class="placeholder">&nbsp;</td>
+              <td class="placeholder">&nbsp;</td>
+            <?php } ?>
+          </tr>
+        <?php } ?>
+      </tbody>
     </table>
     <a href="#" id="add-rock-button" class="button">New rock</a>
     <form action="create.php" id="add-rock-form" method="post">

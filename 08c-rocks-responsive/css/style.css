@@ -104,7 +104,16 @@ td {
 }
 
 @media screen and (max-width: 600px) {
-  th {
+  header h1 {
+    margin-bottom: 0;
+  }
+  header p {
+    margin: 0;
+  }
+  table {
+    margin: 0 0 1em;
+  }
+  thead {
     display: none;
   }
   td {
@@ -112,13 +121,19 @@ td {
     list-style: none;
     padding: .2em 0;
   }
-  
+
+  .where {
+    margin-top: 1em;
+  }
+
   .where:before {
     content: 'Found: ';
     font-weight: bold;
   }
   
-  .diameter {
+  .diameter,
+  .given,
+  .placeholder {
     display: none;
   }
 
@@ -129,5 +144,19 @@ td {
 
   .who:before {
     content: 'Gonna give it to ';
+  }
+
+  .who.done:before {
+    content: 'I gave it to ';
+  }
+  
+  .give {
+    display: inline;
+  }
+  .give:after {
+    content: ' | ';
+  }
+  .put-back {
+    display: inline;
   }
 }
