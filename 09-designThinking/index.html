@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Breaking it into pieces</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <hgroup>
+        <h1>Breaking it into pieces</h1>
+        <h2>How the heck do we make this manageable?</h2>
+      </hgroup>
+    </header>
+    <section class="page-content">
+      <p>The challenge here is to try and figure out what we can reuse.</p>
+      <form action="#">
+        <legend>This form has a legend&hellip;</legend>
+        <p>&hellip;and a few fields</p>
+        <ul>
+          <li>
+            <label for="field1">Field 1</label>
+            <input type="text" name="field1" id="field1"></li>
+          <li>
+            <label for="field2">Field 2</label>
+            <input type="text" name="field2" id="field2"></li>
+          <li>
+            <label for="field3">Field 3</label>
+            <input type="text" name="field3" id="field3"></li>
+          <li><input class="btn" type="submit"></li>
+        </ul>
+      </form>
+      <div class="content-container">
+        <h2 class="content-container__heading">A chunk of content!</h2>
+        <div class="content-container__content">
+        <p>Here's some content for my page. I should really add some more, but what the heck.</p>
+        <p>Here's a <a href="#">plain old link</a>.</p>
+      </div>
+      </div>
+      <div class="content-container">
+        <h2 class="content-container__heading">Another chunk of content!</h2>
+        <div class="content-container__content">
+        <p>Here's some content for my page. I should really add some more, but what the heck.</p>
+        <p>And here's a button, just for the heck of it: <a href="#" class="btn">Button!</a></p>
+      </div>
+      </div>
+      <div class="content-container">
+        <h2 class="content-container__heading">And another chunk of content!</h2>
+        <div class="content-container__content">
+        <p>Here's some content for my page. I should really add some more, but what the heck.</p>
+        <p>And here's a special button: <a href="#" class="btn-special">Special button!</a></p>
+      </div>
+      </div>
+      <div class="content-container">
+        <h2 class="content-container__heading">Final chunk of content!</h2>
+        <div class="content-container__content">
+        <p>Here's some content for my page. I should really add some more, but what the heck.</p>
+      </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <p>Made with love for CCT460.</p>
+    </footer>
+  </div>
+</body>
+</html>

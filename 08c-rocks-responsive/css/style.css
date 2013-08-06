@@ -104,6 +104,7 @@ td {
 }
 
 @media screen and (max-width: 600px) {
+  /* Boring layout stuff */
   header h1 {
     margin-bottom: 0;
   }
@@ -113,6 +114,8 @@ td {
   table {
     margin: 0 0 1em;
   }
+
+  /* Make the table into a list! */
   thead {
     display: none;
   }
@@ -122,21 +125,26 @@ td {
     padding: .2em 0;
   }
 
-  .where {
-    margin-top: 1em;
-  }
-
-  .where:before {
-    content: 'Found: ';
-    font-weight: bold;
-  }
-  
-  .diameter,
+  /* Boring table/list layout stuff */
   .given,
   .placeholder {
     display: none;
   }
 
+  .where {
+    margin-top: 1em;
+  }
+
+  .where:before {
+    content: 'Found in: ';
+    font-weight: bold;
+  }
+
+  .diameter:before {
+    content: 'Diameter: ';
+    font-weight: bold;
+  }
+  
   .color:before {
     content: 'Colour: ';
     font-weight: bold;
